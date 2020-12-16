@@ -1,0 +1,195 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{awesome-red}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\name{Er. Shyam Sundar \\Vashishtha}
+\tagline{"Creativity arises from Relativity , if you could Relate Everything you can create anything."}
+\photo[round]{6.jpg}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+
+\makeheader
+
+\highlightbar{
+
+
+    \section{Contact}
+    
+    \email{shyamvashishtha640@gmail.com}
+    \phone{+91 88177 19155}
+    \location{M.S. Road , 2/233 Joura}
+    
+    
+    \github{@shyam640}{https://github.com/shyam640}
+    \linkedin{Shyam Sundar Vahishtha}{https://www.linkedin.com/in/shyam-sundar-vashishtha-045871159/}
+    
+    
+    \section{Coding Platforms}
+    
+     \href{https://www.codechef.com/users/its_shyam640}{\includegraphics[width=2em]{cc_logo.png}}
+      \hspace{1em}
+    \href{https://www.hackerrank.com/its_shyam640}{\includegraphics[width=2em]{hackerrank logo.jpg}}
+    \hspace{1em}
+    \href{https://codeforces.com/profile/its_shyam640}{\includegraphics[width=2em]{codeforce_ logo.png}}
+    \hspace{1em}
+    \href{https://www.hackerearth.com/@its_shyam640}{\includegraphics[width=2em]{HackerEarth_logo.png}}
+    \hspace{1em}      
+    \href{https://www.stopstalk.com/user/profile/its_shyam640}{\includegraphics[width=2em]{StopStalk logo.png}}
+    \hspace{1em}
+    
+    
+    
+    
+    \section{Skills}
+    
+    \skillsection{Programming}
+    \skill{C++}{5}
+    \skill{DS Algo}{2}
+    \skill{java}{1}
+    \skill{Python}{1}
+    \skill{c#}{2}
+    \skill{SQL}{2}
+    
+    \vspace{0.5em}
+    \skillsection{Web Languages}
+    \skill{HTML5}{4}
+    \skill{CSS}{4}
+    
+    \vspace{0.5em}
+    \skillsection{Operating Systems}
+     \skill{Windows}{4}
+    \skill{Linux}{3}
+    \skill{MacOS}{3}
+   
+    
+    \vspace{0.5em}
+    \skillsection{Software \& Tools}
+    \skill{Visual Studio}{3}
+    \\
+    \skill{Ubuntu}{2}\\
+    
+    \skill{Office}{4}
+    
+    \vspace{0.5em}
+    \skillsection{co-curricular skills (Works For Free)}
+    Web Page Designing\\Social media Handling
+    \\
+    
+    \vspace{0.5em}
+    \skillsection{Languages}
+    \skill{Hindi}{5}
+    \skill{English}{5}
+    \skill{French}{1}
+    (just can give introduction)
+    \bigskip
+    
+    \section{Certificates}
+    \simpleskill{* Sololearn Certified in C++}\\
+    \simpleskill{* Sololearn Certified in HTML and CSS}\\
+    \simpleskill{* Presently 2 star coder at Codechef}
+    
+}
+\mainbar{
+      \section[\faMortarBoard]{Education}
+    \job{09/2020 - 04/2024}
+        {Lovely Professional University\\Phagwara,Punjab 144411}\\
+        
+        {{Bachelor of Technology}\\
+        {Computer Science and Engineering (Hons.)}}
+    
+    \section{About Me}
+    A Student from above mentioned University with an Extraordinary idea to bring a hike in the market of Computing by engaging the people in the competitive Programming World and make them learn Real life application of Programming.
+    
+   
+    \section[\faGears]{Work}
+    \job{06/2020 - present}
+        {Shyam Sundar Vashishtha ,Gwalior}\\
+        \\
+        {Website Designing}
+        \\
+        {     This is the site basically for UPSC quizzes build with HTML,CSS,Javascript}
+        \\
+        \\
+    \job{Upcoming}
+        {Gwalior , M.P.}\\
+        { Selected many Projects with C++ , HTML , CSS . Going to work on them in Future}
+    
+   
+
+    \section{Achievements, honours and awards}
+    \achievement{}
+    \achievement{}
+
+    \section{General Skills}
+    \smallskip % additional skip because tag outlines use up space
+    \tag{C++}
+    \tag{HTML}
+    \tag{CSS}
+    \tag{JAVA}
+    \tag{python}
+    
+    
+    \medskip
+   
+    
+    \section{Time Ussage}
+    % This is taken from AltaCV
+    % see https://github.com/liantze/AltaCV for details
+    \wheelchart{1.5cm}{0.5cm}{% outer and inner diameter
+        6/8em/accent!20/Sleep,          % comma-separated list of
+        8/8em/accent!40/Competitive Programming,    % fraction of 24 / line length / color / label
+        2/8em/accent!80/Building own Projects,          % here, the color is shades of the accent color
+        3/8em/accent!60/Other Stuffs,
+        5/8em/accent/Learning
+    }
+}
+\makebody
+\clearpage
+
+
+\pagestyle{highlightmain}
+\highlightbar{}
+
+\end{document}
